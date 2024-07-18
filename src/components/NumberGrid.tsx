@@ -5,7 +5,9 @@ type NumberGridProps = {
 };
 
 const generateNumberArray = (total: any): number[] => {
-  return Array.from({ length: total }, (_, i) => i + 1);
+  const numArray = Array.from({ length: total }, (_, i) => i + 1);
+  const numArrayMinusTwo = numArray.slice(1);
+  return numArrayMinusTwo;
 };
 
 function NumberGrid({ total }: NumberGridProps) {
@@ -13,7 +15,6 @@ function NumberGrid({ total }: NumberGridProps) {
 
   return (
     <div className="flex py-8 items-center flex-col">
-     
       <div className=" px-4 py-8 grid grid-cols-5 gap-4 grid-rows-10 place-items-center  min-h-screen bg-black text-green-400 ">
         {numberArray.map((num: any) => (
           <Num num={num} />
