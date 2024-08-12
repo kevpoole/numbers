@@ -41,7 +41,7 @@ function App() {
           >
             <input
               autoComplete="off"
-              onFocus={errMsg ? () => setErrMsg([""]) : undefined}
+              autoFocus={true}
               ref={totalRef}
               className="h-28 w-28 mt-4 flex items-center justify-center text-center border border-white outline-none bg-transparent text-5xl "
               name="num"
