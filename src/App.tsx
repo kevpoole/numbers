@@ -12,7 +12,7 @@ function App() {
          <form
           onSubmit={(e) => {
             e.preventDefault();
-            setTotal(totalRef.current.value);
+            setTotal(totalRef.current.value > 100 ? 100 : totalRef.current.value );
             setShowReset(true);
             window.scrollTo({top:0})
           }}

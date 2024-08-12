@@ -6,7 +6,7 @@ type NumberGridProps = {
 
 const generateNumberArray = (total: any): number[] => {
   const numArray = Array.from({ length: total }, (_, i) => i + 1);
-  const numArrayMinusTwo = numArray.slice(1, 60);
+  const numArrayMinusTwo = numArray.slice(1);
   return numArrayMinusTwo;
 };
 
