@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 type NumProps = {
-    num: number | undefined
+    num: number
 }
 
 function Num({num}: NumProps) {
